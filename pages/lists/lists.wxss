@@ -1,0 +1,171 @@
+.head-tab {
+   display: flex;
+   width: 100%;
+   height: 100rpx;
+    overflow: hidden;
+   border-top: 1rpx solid #ddd;
+   border-bottom: 1rpx solid #ddd;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20rpx;
+}
+.head-tab-item {
+    flex:1;
+    height: 100%;
+    text-align: center;
+    border-left: 1rpx solid #ddd;
+}
+.tabs .active {
+    background:#ccc;
+}
+.head-tab-item:first-child {
+  border-left:none;
+}
+.head-tab-item .title-text {
+   font-size: 28rpx;
+   margin-bottom: 4rpx;
+   margin-top: 20rpx;
+}
+.head-tab-item .date-mouth {
+   display:inline-block;
+    font-size: 24rpx;
+    margin-right: 10rpx;
+
+}
+.head-tab-item .date-week {
+   display:inline-block;
+   font-size: 24rpx;
+
+}
+.address-tab {
+    width: 100%;
+    height: 60rpx;
+    float: right;
+    text-align: right;
+    overflow: hidden;
+    margin-right: 100rpx;
+    border-bottom: 1rpx solid #ddd;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    font-weight: bolder;
+}
+
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.main-tab {
+    width: 100%;
+    overflow: hidden;
+
+}
+.main-tab .main-box {
+    width: 100%;
+    overflow: hidden;
+    padding: 20rpx 10rpx;
+    border-bottom: 1px solid #ddd;
+}
+.main-tab .main-list {
+    width: 100%;
+    overflow: hidden;
+}
+.main-tab .main-list .main-item {
+    width: 100%;
+    overflow: hidden;
+    height: 160rpx;
+    margin-bottom: 30rpx;
+    background-color: #eee;
+}
+.main-tab .main-item .item-left {
+    width: 160rpx;
+    height: 160rpx;
+    overflow: hidden;
+    float: left;
+    margin-right: 20rpx;
+    position: relative;
+}
+.main-tab .main-item .item-left .item-img {
+    width: 100%;
+    height: 100%;
+    /*vertical-align: middle;*/
+}
+.main-tab .main-item .item-left .pet-num {
+    position: absolute;
+    right:0;
+    top:0;
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #45BCE8;
+    text-align: center;
+    line-height: 30rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
+.main-tab .main-item .item-center {
+    float: left;
+}
+.main-tab .main-item .item-center-one {
+    width: 200rpx;
+    height: 160rpx;
+    overflow: hidden;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    margin-right: 20rpx;
+    float: left;
+}
+.main-tab .main-item .item-center-two {
+    width: 150rpx;
+    height: 160rpx;
+    overflow: hidden;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    float: left;
+}
+.main-tab .main-item .item-center-one .user-name {
+    font-size: 36rpx;
+    line-height: 60rpx;
+}
+.main-tab .main-item .item-center-one .user-time {
+    font-size: 24rpx;
+    line-height: 40rpx;
+}
+.main-tab .main-item .item-center-two .pet-details {
+    font-size: 24rpx;
+    /*line-height: 40rpx;*/
+}
+.main-tab .main-item .item-right {
+    float: right;
+    height: 160rpx;
+    margin-right: 30rpx;
+    overflow: hidden;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+.main-tab .main-item .item-right button {
+    width: 120rpx;
+    height: 30rpx;
+    font-size: 24rpx;
+    line-height: 30rpx;
+    text-align: center;
+    padding:0;
+    margin: 6rpx 0;
+}
+.main-tab .main-item .item-right .show {
+    display: block;
+}
+.main-tab .main-item .item-right .hidden {
+    display: none;
+}

@@ -1,0 +1,93 @@
+<!--lists.wxml-->
+<view class="container tabs">
+    <view class="head-tab">
+        <view class="head-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+            <block>
+                <view class="title-text">今天</view>
+                <view>
+                    <text class="date-mouth">{{dateNum1}}</text>
+                    <text class="date-week">{{weekNum1}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="head-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+            <block>
+                <view class="title-text">明天</view>
+                <view>
+                    <text class="date-mouth">{{dateNum2}}</text>
+                    <text class="date-week">{{weekNum2}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="head-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+            <block>
+                <view class="title-text">后天</view>
+                <view>
+                    <text class="date-mouth">{{dateNum3}}</text>
+                    <text class="date-week">{{weekNum3}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="address-tab">
+        {{addressName}}
+    </view>
+    <view class="main-tab">
+        <view class="main-box">
+            <view class="main-list">
+                <view class="main-item" wx:for="{{listsArray}}" wx:for-index="idx" wx:for-item="item" wx:key="{{item.id}}">
+                    <block>
+                        <view class="item-left">
+                            <image class="item-img"
+                                    src="{{item.imgSrc}}"
+                            ></image>
+                            <text class="pet-num">{{item.petNum}}</text>
+                        </view>
+                        <view class="item-center">
+                            <view class="item-center-one">
+                                <text class="user-name">{{item.userName}}</text>
+                                <text class="user-time user-time-s">预约时间：{{item.timeS}}</text>
+                                <text class="user-time user-time-e">完成时间：{{item.timeE}}</text>
+                            </view>
+                            <view class="item-center-two">
+                                <block>
+                                    <text class="pet-details" wx:for="{{item.petDetails}}" wx:for-index="petIdx" wx:for-item="petItem" wx:key="*this">
+                                        {{petItem.petDetails1}}{{petItem.petDetails2}}
+                                    </text>
+                                </block>
+                                
+                            </view>
+                            <!--<text class="pet-details">{{item.petDetails}}</text>-->
+                        </view>
+                        <view class="item-right">
+                            <button
+                                    class="{{item.show1 ? 'show':'hidden'}}"
+                                    type="default"
+                                    size="mini"
+                                    bindtap="button1">
+                                button1
+                            </button>
+                            <button
+                                    class="{{item.show2 ? 'show':'hidden'}}"
+                                    type="primary"
+                                    size="mini"
+                                    bindtap="button2"
+                            >
+                                button2
+                            </button>
+                            <button
+                                    class="{{item.show3 ? 'show':'hidden'}}"
+                                    type="warn"
+                                    size="mini"
+                                    bindtap="button3"
+                            >
+                                button3
+                            </button>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

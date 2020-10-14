@@ -1,0 +1,89 @@
+<!--appo.wxml-->
+<view class="container tabs">
+    <view class="head-tab">
+        <view class="head-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+            <block>
+                <view class="title-text">今天</view>
+                <view>
+                    <text class="date-mouth">{{dateNum1}}</text>
+                    <text class="date-week">{{weekNum1}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="head-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+            <block>
+                <view class="title-text">明天</view>
+                <view>
+                    <text class="date-mouth">{{dateNum2}}</text>
+                    <text class="date-week">{{weekNum2}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="head-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+            <block>
+                <view class="title-text">后天</view>
+                <view>
+                    <text class="date-mouth">{{dateNum3}}</text>
+                    <text class="date-week">{{weekNum3}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="address-tab">
+        <view class="address-tab-item {{addressTab==0?'active':''}}" data-address="0" bindtap="addressTab">
+            {{addressName1}}
+        </view>
+        <view class="address-tab-item {{addressTab==1?'active':''}}" data-address="1" bindtap="addressTab">
+            {{addressName2}}
+        </view>
+        <view class="address-tab-item {{addressTab==2?'active':''}}" data-address="2" bindtap="addressTab">
+            {{addressName3}}
+        </view>
+    </view>
+    <view class="main-tab">
+        <view class="title">预约系统已开发</view>
+        <view class="day-box">
+            <block>
+                <view class="day-item noorder" wx:if="{{noOrder}}">
+                    <block>
+                        <button class="btn-order btn-blue" wx:if="{{btnColor}}" bindtap='goappo'>预约</button>
+                        <button class="btn-order btn-gray" disabled wx:else>预约</button>
+                    </block>
+                    
+                </view>
+                <view class="day-item noorder" wx:else>
+                    <view class="hasorder-box">
+                        <view class="hasorder-list">
+                            <view class="list-head">预约详情</view>
+                            <view class="list-div">
+                                <view class="list-item">
+                                    <text>预约时间：</text>
+                                    <text>{{ orderDate }}</text>
+                                </view>
+                                <view class="list-item">
+                                    <text>预约店铺：</text>
+                                    <text>{{ orderAddress }}</text>
+                                </view>
+                                <view class="list-item">
+                                    <text>电话：</text>
+                                    <text>{{ orderTel }}</text>
+                                </view>
+                                <view class="list-item">
+                                    <view>预约列表：</view>
+                                    <view class="order-list" wx:for="{{orderLists}}" wx:for-index="idx" wx:for-item="item">
+                                        <text class="order-list-li">{{item.size}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="hasorder-btn">
+                            <button class="order-btn" type="primary" size="mini" bindtap="goappo">修改预约</button>
+                            <button class="order-btn" type="warn" size="mini" bindtap="cancelOrder">取消预约</button>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>

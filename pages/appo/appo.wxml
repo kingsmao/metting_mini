@@ -1,0 +1,108 @@
+<!--appo.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit='true'>
+<view class="container app">
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">预约日期：</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="123" disabled />
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">预约店铺：</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="123" disabled />
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+            <view class="weui-cell__hd">
+                <view class="weui-label">手机号：</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" placeholder="请输入手机号" />
+            </view>
+        </view>
+        <view class="order-box">
+            <view class="order-title">预约列表：</view>
+            <view class="order-lists">
+                <view class="order-lists-li">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__hd">
+                            <view class="weui-label">宠物1</view>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <picker
+                                    mode="multiSelector"
+                                    bindchange="bindMultiPickerChange"
+                                    bindcolumnchange="bindMultiPickerColumnChange"
+                                    value="{{multiIndex}}"
+                                    range="{{multiArray}}">
+                                <view class="picker">
+                                    {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}} {{multiArray[2][multiIndex[2]]}}
+                                </view>
+                            </picker>
+                        </view>
+                    </view>
+                    <view class="delete-div">
+                        <button class="delete" size="mini" type="warn" bindtap="delete">删除</button>
+                    </view>
+                </view>
+                <view class="order-lists-li">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__hd">
+                            <view class="weui-label">宠物2</view>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <picker
+                                    mode="multiSelector"
+                                    bindchange="bindMultiPickerChange1"
+                                    bindcolumnchange="bindMultiPickerColumnChange1"
+                                    value="{{multiIndex1}}"
+                                    range="{{multiArray1}}">
+                                <view class="picker">
+                                    {{multiArray1[0][multiIndex1[0]]}} {{multiArray1[1][multiIndex1[1]]}} {{multiArray1[2][multiIndex1[2]]}}
+                                </view>
+                            </picker>
+                        </view>
+                    </view>
+                    <view class="delete-div">
+                        <button class="delete" size="mini" type="warn" bindtap="delete1">删除</button>
+                    </view>
+                </view>
+                <view class="order-lists-li">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__hd">
+                            <view class="weui-label">宠物3</view>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <picker
+                                    mode="multiSelector"
+                                    bindchange="bindMultiPickerChange2"
+                                    bindcolumnchange="bindMultiPickerColumnChange2"
+                                    value="{{multiIndex2}}"
+                                    range="{{multiArray2}}">
+                                <view class="picker">
+                                    {{multiArray2[0][multiIndex2[0]]}} {{multiArray2[1][multiIndex2[1]]}} {{multiArray2[2][multiIndex2[2]]}}
+                                </view>
+                            </picker>
+                        </view>
+                    </view>
+                    <view class="delete-div">
+                        <button class="delete" size="mini" type="warn" bindtap="delete2">删除</button>
+                    </view>
+                </view>
+                <view class="text-title">
+                    提示：如果宠物超过3只，请按3只预约。
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-btn-area">
+    <button class="weui-btn" size="default" type="primary" form-type="submit">提交</button>
+</view>
+</form>
