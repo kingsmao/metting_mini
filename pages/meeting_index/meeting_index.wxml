@@ -15,7 +15,8 @@
 </view>
 
 <view>
-    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <!--<picker start="2020-09-01" end="2025-12-01" > 是限制时间组件范围-->
+    <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
         <view >
             日期: {{date}}
         </view>
@@ -23,7 +24,7 @@
 </view>
 
 <view>
-    <picker mode="time" value="{{beginTime}}" start="09:01" end="21:01" bindchange="bindTimeStartChange">
+    <picker mode="time" value="{{beginTime}}"  bindchange="bindTimeStartChange">
         <view class="picker">
             开始时间: {{beginTime}}
         </view>
@@ -32,7 +33,7 @@
 
 
 <view>
-    <picker mode="time" value="{{endTime}}" start="09:01" end="21:01" bindchange="bindTimeEndChange">
+    <picker mode="time" value="{{endTime}}"  bindchange="bindTimeEndChange">
         <view class="picker">
             结束时间: {{endTime}}
         </view>
