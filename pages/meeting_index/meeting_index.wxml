@@ -1,0 +1,14 @@
+<!--pages/meeting_index/meeting_index.wxml-->
+<view class="pyg_index">
+
+    <view>
+        <view wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
+            房间id:{{room.roomId}}
+            房间名字:{{room.roomName}}
+            <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
+                会议室主题：{{meeting.meetingName}}
+                开始时间：{{meeting.beginTime}} - 结束时间：{{meeting.endTime}}
+            </view>
+        </view>
+    </view>
+</view>
