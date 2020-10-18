@@ -20,7 +20,7 @@ Page({
      * 获取我预定的会议室列表
      */
     myMeetingList() {
-        request({url: "/myMeetingList"})
+        request({url: "/myMeetingList", method: "GET", data: {openId: wx.getStorageSync('openid')}})
             .then(result => {
                 console.log(result)
                 this.setData({
