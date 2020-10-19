@@ -2,49 +2,54 @@
 <view class="pyg_index">
 
     <view>
-        <view wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
-            房间id:{{room.roomId}}
-            房间名字:{{room.roomName}}
+        <view class="meetingList" wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
+            <view class="meetingTd">房间id:{{room.roomId}}</view>
+            <view class="meetingTd">房间名字:{{room.roomName}}</view>
             <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
-                会议室主题：{{meeting.meetingName}}
-                开始时间：{{meeting.beginTime}} - 结束时间：{{meeting.endTime}}
+                <view class="meetingTd">会议室主题：{{meeting.meetingName}}</view>
+                <view class="meetingTd">开始时间：{{meeting.beginTime}}</view>
+                <view class="meetingTd">结束时间：{{meeting.endTime}}</view>
             </view>
         </view>
     </view>
 
 </view>
 
-<view>
-    <!--<picker start="2020-09-01" end="2025-12-01" > 是限制时间组件范围-->
-    <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
-        <view >
-            日期: {{date}}
-        </view>
-    </picker>
-</view>
 
-<view>
-    <picker mode="time" value="{{beginTime}}"  bindchange="bindTimeStartChange">
-        <view class="picker">
-            开始时间: {{beginTime}}
-        </view>
-    </picker>
-</view>
-
-
-<view>
-    <picker mode="time" value="{{endTime}}"  bindchange="bindTimeEndChange">
-        <view class="picker">
-            结束时间: {{endTime}}
-        </view>
-    </picker>
-</view>
 
 
 <!-- 底部工具栏 -->
-<view class="footer_tool">
+<view class="pickTime">
+    <view class="pickDate">
+        <!--<picker start="2020-09-01" end="2025-12-01" > 是限制时间组件范围-->
+        <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
+            <view >
+                日期: {{date}}
+            </view>
+        </picker>
+    </view>
+
+    <view class="startTime">
+        <picker mode="time" value="{{beginTime}}"  bindchange="bindTimeStartChange">
+            <view class="picker">
+                开始时间: {{beginTime}}
+            </view>
+        </picker>
+    </view>
+
+
+    <view class="endTime">
+        <picker mode="time" value="{{endTime}}"  bindchange="bindTimeEndChange">
+            <view class="picker">
+                结束时间: {{endTime}}
+            </view>
+        </picker>
+    </view>
 
     <view class="search" bindtap="searchByTime" >
         搜索
     </view>
+</view>
+<view class="footer_tool">
+    
 </view>

@@ -1,24 +1,77 @@
 /* pages/meeting_index/meeting_index.wxss */
 
 
-.footer_tool {
+.pickTime {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 90rpx;
+    height: 320rpx;
     background-color: #fff;
-    display: flex;
+    
     border-top: 1rpx solid #ccc;
 }
 
-.footer_tool .search {
+.pickTime .search {
     flex: 3;
     background-color: #3cc51f;
     color: #fff;
     font-size: 32rpx;
     font-weight: 600;
+    height: 80rpx;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.pickTime .pickDate {
+    flex: 3;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pickTime .startTime {
+    flex: 3;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pickTime .endTime {
+    flex: 3;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 600;
+    height: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meetingList {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240rpx;
+    background-color: #fff;
+    
+    border-top: 1rpx solid #ccc;
+}
+
+.meetingList .meetingTd {
+    width: 100%;
+    height: 48rpx;
+    background-color: #fff;
 }
