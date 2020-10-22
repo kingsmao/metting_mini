@@ -1,5 +1,5 @@
 <!--pages/my_meeting_detail/my_meeting_detail.wxml-->
-<view class="meetingDetail">          
+<!-- <view class="meetingDetail">          
   <view hidden="true">{{myMeetingDetail.roomId}}</view>
   <view> 会议室: {{myMeetingDetail.roomName}}</view>
   <view hidden="true">{{myMeetingDetail.meetingId}}</view>
@@ -14,5 +14,46 @@
 
   <view hidden="{{ !myMeetingDetail.canDelete}}" >
     <button bindtap='deleteMeeting' data-item='{{myMeetingDetail.meetingId}}'>取消预定</button>
+  </view>
+</view> -->
+<!--pages/meeting_room/meeting_room.wxml-->
+<view class="container">
+  <view class="inner_box">
+    <form catchsubmit="formSubmit" >
+      <view hidden="true">{{myMeetingDetail.roomId}} </view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">会议室:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.roomName}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">日期:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.date}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">开始时间:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.beginTime}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">结束时间:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.endTime}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">部门:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.departmentName}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">会议主题:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.meetingName}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">预定人:</view>
+            <view class="weui-cell__ft">{{myMeetingDetail.userName}}</view>
+        </view>
+      </view>
+      <view>
+        <button  type="primary" formType="submit">取消预定</button>
+      </view>
+    </form>
   </view>
 </view>
