@@ -52,7 +52,7 @@
         </view>
       </view>
       <view>
-        <button  class="button_search"formType="submit">取消预定</button>
+        <button  type="primary" formType="submit">取消预定</button>
       </view>
     </form>
   </view>

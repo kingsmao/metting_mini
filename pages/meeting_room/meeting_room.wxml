@@ -52,7 +52,7 @@
         </view>
       </view>
       <view>
-        <button  class="button_search"formType="submit">提交</button>
+        <button  type="position:fixed;width:100%;bottom:0" formType="submit">提交</button>
       </view>
     </form>
   </view>
