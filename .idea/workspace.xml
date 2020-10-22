@@ -5,103 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/actionsheet/actionsheet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/actionsheet/actionsheet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/actionsheet/actionsheet.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/actionsheet/actionsheet.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/badge/badge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/badge/badge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/badge/badge.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/badge/badge.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cell/cell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cell/cell.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cell/cell.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cell/cell.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cells/cells.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cells/cells.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cells/cells.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/cells/cells.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox-group/checkbox-group.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox-group/checkbox-group.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox-group/checkbox-group.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox-group/checkbox-group.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox/checkbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox/checkbox.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox/checkbox.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/checkbox/checkbox.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/dialog/dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/dialog/dialog.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/dialog/dialog.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/dialog/dialog.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form-page/form-page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form-page/form-page.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form-page/form-page.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form-page/form-page.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form/form.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/form/form.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/gallery/gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/gallery/gallery.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/gallery/gallery.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/gallery/gallery.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/grids/grids.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/grids/grids.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/grids/grids.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/grids/grids.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/half-screen-dialog/half-screen-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/half-screen-dialog/half-screen-dialog.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/half-screen-dialog/half-screen-dialog.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/half-screen-dialog/half-screen-dialog.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/icon/icon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/icon/icon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/icon/icon.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/icon/icon.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/loading/loading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/loading/loading.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/loading/loading.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/loading/loading.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/msg/msg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/msg/msg.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/msg/msg.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/msg/msg.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/navigation-bar/navigation-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/navigation-bar/navigation-bar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/navigation-bar/navigation-bar.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/navigation-bar/navigation-bar.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/searchbar/searchbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/searchbar/searchbar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/searchbar/searchbar.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/searchbar/searchbar.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/slideview/slideview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/slideview/slideview.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/slideview/slideview.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/slideview/slideview.wxs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/slideview/slideview.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/static/icon/s-arrow-back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/static/icon/s-arrow-back.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/tabbar/tabbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/tabbar/tabbar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/tabbar/tabbar.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/tabbar/tabbar.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/toptips/toptips.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/toptips/toptips.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/toptips/toptips.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/toptips/toptips.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/uploader/uploader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/uploader/uploader.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/uploader/uploader.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/uploader/uploader.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/weui-wxss/dist/style/icon/weui-icon.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/miniprogram_dist/weui-wxss/dist/style/weui.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/weui-miniprogram/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+    <list default="true" id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="feat(meeting_mini): 更新weui">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/meeting_index/meeting_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_index/meeting_index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/meeting_index/meeting_index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_index/meeting_index.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,10 +116,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603332803544" />
-    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603357388852">
+    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603363608136">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603357388852" />
+    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603363608136" />
     <state x="656" y="311" key="git4idea.merge.GitPullDialog" timestamp="1603343044188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
