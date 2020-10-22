@@ -59,7 +59,7 @@ page,view,text,swiper,swiper-item,image,navigator{
 .box-upper {
   width:90%;
   padding: 20px;
-  background-color: #DCDCDC;
+  background-color: #D3D3D3;
   border-radius: 10px;
   align-items: center;
   margin-top: 18rpx;
@@ -85,7 +85,7 @@ page,view,text,swiper,swiper-item,image,navigator{
 .button_order{
   background-color: #8FBC8F;
   margin-right: -9px;
-  margin-top: -2px;
+  margin-top: 0px;
   width: 25%;
   height: 31px;
   text-align:center;
@@ -100,6 +100,8 @@ page,view,text,swiper,swiper-item,image,navigator{
   text-align:center;
   margin-left: 5%;
   float: left;
+  background-color: #8FBC8F;
+  color: white;
 }
 
 .button_my{
@@ -108,6 +110,8 @@ page,view,text,swiper,swiper-item,image,navigator{
   text-align:center;
   margin-right: 5%;
   float: right;
+  color: white;
+  background-color: #8FBC8F;
 }
 .color_blue{
   background-color: rgb(18, 127, 255);

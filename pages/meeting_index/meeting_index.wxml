@@ -53,7 +53,7 @@
             </picker>
         </view>
     </view>
-<button type="primary" class="button_search" bindtap="availableRoomByTime">搜索</button>
-<button type="primary" class="button_my" bindtap="goToMyMeeting">我的</button>
+<button  class="button_search" bindtap="availableRoomByTime">搜索</button>
+<button  class="button_my" bindtap="goToMyMeeting">我的</button>
 </view>
 
