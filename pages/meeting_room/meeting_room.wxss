@@ -1,5 +1,27 @@
 /* pages/meeting_room/meeting_room.wxss */
 @import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
 .inner_box{
-  width: 100%;
+  width: 90%;
+}
+.row_box{
+  height: 7%;
+}
+
+.sub_box{
+  background-color: #5F9EA0;
+}
+.button_search{
+  margin-top: 10rxp;
+  width: 90%;
+  height: 38px;
+  text-align:center;
+  margin-left: 5%;
+  float: left;
+  background-color: 	#5F9EA0;
+  color: white;
+  line-height: 38px;
+}
+
+.box_with{
+  justify-content: space-between;
 }

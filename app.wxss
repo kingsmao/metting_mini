@@ -92,6 +92,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   float: right;
   border-radius: 18px;
   color: white;
+  line-height: 31px;
 }
 
 .button_search{
@@ -100,8 +101,9 @@ page,view,text,swiper,swiper-item,image,navigator{
   text-align:center;
   margin-left: 5%;
   float: left;
-  background-color: #8FBC8F;
+  background-color: 	#5F9EA0;
   color: white;
+  line-height: 38px;
 }
 
 .button_my{
@@ -111,7 +113,8 @@ page,view,text,swiper,swiper-item,image,navigator{
   margin-right: 5%;
   float: right;
   color: white;
-  background-color: #8FBC8F;
+  background-color: 	#5F9EA0;
+  line-height: 38px;
 }
 .color_blue{
   background-color: rgb(18, 127, 255);
@@ -143,6 +146,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   border-radius: 5px;
   float: left;
   color: white;
+  line-height: 25px;
 }
 .third,.fifth {
   clear: both;
@@ -166,6 +170,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   margin-right: 10px;
   margin-top: 5px;
   text-align: center;
+  line-height: 25px;
   border-radius: 5px;
   color: white;
 }

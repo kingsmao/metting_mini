@@ -16,34 +16,46 @@
     </view>
   </view>
 
-  <view >
+  <view class="inner_box">
     <form catchsubmit="formSubmit" >
       <view hidden="true">{{meetingRoom.roomId}} </view>
-      <view > 会议室: {{meetingRoom.roomName}} </view>
-      <view>会议日期: {{meetingRoom.date}}</view>
-      <view>开始时间: {{meetingRoom.beginTime}}</view>
-      <view>结束时间: {{meetingRoom.endTime}}</view>
-      <view>部门: 
-        <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
-        <!-- <radio-group name="departmentId">
-          <view wx:for="{{meetingRoom.departmentList}}" wx:for-item="department" wx:for-index="index" wx:key="id" >
-            <radio value="{{department.id}}" checked="true"/>{{department.name}}
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">会议室:</view>
+            <view class="weui-cell__ft">{{meetingRoom.roomName}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">日期:</view>
+            <view class="weui-cell__ft">{{meetingRoom.date}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">开始时间:</view>
+            <view class="weui-cell__ft">{{meetingRoom.beginTime}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">结束时间:</view>
+            <view class="weui-cell__ft">{{meetingRoom.endTime}}</view>
+        </view>
+        <view class="weui-cell box_with">
+            <view class="weui-cell__bd">部门:</view>
+            <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
+        </view>
+        <view class="weui-cell box_with">
+            <view class="weui-cell__bd">会议主题:</view>
+            <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
+        </view>
+          <view class="weui-cell weui-cell_active">
+              <view class="weui-cell__hd">
+                  <view class="weui-label">预定人:</view>
+              </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" placeholder="{{meetingRoom.userName}}"/>
+              </view>
           </view>
-        </radio-group> -->
       </view>
-
       <view>
-        会议名称: <input auto-focus type="text" name="meetingName" placeholder="输入会议名称" />
-      </view>
-      
-      <view> 预定人: 
-        <input auto-focus type="text" name="userName" placeholder="{{meetingRoom.userName}}" />
-      </view>
-
-      <view >
-        <button type="primary" formType="submit">Submit</button>
+        <button  class="button_search"formType="submit">提交</button>
       </view>
     </form>
   </view>
-
 </view>
