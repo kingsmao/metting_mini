@@ -1,2 +1,5 @@
 /* pages/meeting_room/meeting_room.wxss */
 @import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+.inner_box{
+  width: 100%;
+}

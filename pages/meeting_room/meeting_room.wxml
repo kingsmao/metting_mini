@@ -1,23 +1,22 @@
 <!--pages/meeting_room/meeting_room.wxml-->
 <view class="container">
-
-  <view class="box-upper " wx:for="{{meetingRoom.meetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
-          <view>
-              <view class="first">{{room.roomName}}</view>
-              <view class="secondOne">{{room.roomPersonCount}}</view>
-              <view class="secondOne">沙发</view>
-              <view class="secondOne">投影仪</view>
-              <view class="secondOne">白板</view>
-          </view>
-          <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
-              <view class="third">
-                  <view class="thirdOne">{{meeting.timeRange}}</view>
-                  <view class="thirdTwo">{{meeting.meetingSubject}}</view>
-              </view>
-          </view>
+  <view class="box-upper">
+    <view>
+        <view class="first">{{meetingRoom.roomName}}</view>
+        <view class="secondOne">{{meetingRoom.roomPersonCount}}人</view>
+        <view class="secondOne">沙发</view>
+        <view class="secondOne">投影仪</view>
+        <view class="secondOne">白板</view>
+    </view>
+    <view wx:for="{{meetingRoom.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
+        <view class="third">
+            <view class="thirdOne">{{meeting.timeRange}}</view>
+            <view class="thirdTwo">{{meeting.meetingSubject}}</view>
+        </view>
+    </view>
   </view>
 
-  <view class="page-body">
+  <view >
     <form catchsubmit="formSubmit" >
       <view hidden="true">{{meetingRoom.roomId}} </view>
       <view > 会议室: {{meetingRoom.roomName}} </view>
