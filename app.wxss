@@ -134,7 +134,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   border-radius: 5px;
   margin-top: -24rpx;
   font-weight: bold;
-  font-size: 32rpx;
+  font-size: 30rpx;
   line-height: 20px;
 }
 .secondOne {

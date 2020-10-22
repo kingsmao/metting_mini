@@ -50,6 +50,16 @@
               <input class="weui-input" name="userName" placeholder="{{meetingRoom.userName}}" />
             </view>
         </view>
+        <view class="weui-cell">
+           
+        </view>
+        <view class="weui-cell">
+           
+          </view>
+          <view class="weui-cell">
+           
+          </view>
+          
       </view>
       <view class="force_bottom">
         <button  type="primary" formType="submit">提交</button>
