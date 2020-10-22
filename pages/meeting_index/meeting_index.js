@@ -2,7 +2,7 @@
 import {request} from "../../request/index.js";
 import {getSetting, chooseAddress, openSetting, showModal, showToast} from "../../utils/asyncWx.js";
 import regeneratorRuntime from '../../lib/runtime/runtime';
-import {formatTime, formatDate,getTime,getTimePlusOne} from "../../utils/util.js";
+import {formatTime, formatDate, getTime, getTimePlusOne} from "../../utils/util.js";
 
 
 // pages/meeting_index/meeting_index.js
@@ -34,8 +34,9 @@ Page({
         const date = this.data.date;
         request({
             url: "/availableRoomByTime", method: "GET", data: {
-                beginTime: date + " " + beginTime,
-                endTime: date + " " + endTime
+                date: date,
+                beginTime: beginTime,
+                endTime: endTime
             }
         }).then(result => {
             console.log(result);
@@ -45,7 +46,7 @@ Page({
         })
     },
 
-    goToReserve: function(e) {
+    goToReserve: function (e) {
         var item = e.currentTarget.dataset.item;
         const beginTime = this.data.beginTime;
         const endTime = this.data.endTime;

@@ -58,6 +58,8 @@ App({
 
                         }
                     })
+                } else {
+                    console.log("res.authSetting['scope.userInfo'] is null")
                 }
             }
         })
