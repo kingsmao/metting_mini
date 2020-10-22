@@ -4,12 +4,11 @@
     <view wx:for="{{myMeetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
         <view bindtap="goToMeetingDetail" data-item="{{meeting.meetingId}}">
             <view hidden="true">房间id:{{meeting.roomId}}</view>
-            <view>房间名字:{{meeting.roomName}}</view>
             <view hidden="true">会议id:{{meeting.meetingId}}</view>
+            <view>时间：{{meeting.dateTimeRange}}</view>
+            <view>会议室名字:{{meeting.roomName}}</view>
+            <view>会议室主题：{{meeting.meetingSubject}}</view>
             <view>会议室状态:{{meeting.statusMsg}}</view>
-            <view>会议室主题：{{meeting.meetingName}}</view>
-            <view>开始时间：{{meeting.beginTime}} - 结束时间：{{meeting.endTime}}</view>
-            <view>部门名字:{{meeting.departmentName}}</view>
         </view>
         
     </view>
