@@ -18,7 +18,7 @@ background-color:  #D3D3D3;
   margin-top: 1px;
 }
 .ok_back{
-  background-color: #FFFFE0;
+  background-color: 	#87CEEB;
 }
 .over_back{
   background-color: 	#D3D3D3;
