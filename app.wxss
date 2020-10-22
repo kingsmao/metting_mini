@@ -101,7 +101,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   text-align:center;
   margin-left: 5%;
   float: left;
-  background-color: 	#179B16;
+  background-color: 	 #008B8B;
   color: white;
   line-height: 38px;
 }
@@ -113,7 +113,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   margin-right: 5%;
   float: right;
   color: white;
-  background-color: 	#179B16;
+  background-color: 	 #008B8B;
   line-height: 38px;
 }
 .color_blue{
