@@ -22,8 +22,7 @@
 
   <view class="page-body">
     <form catchsubmit="formSubmit" >
-      <view >
-      <block hidden="true">{{meetingRoom.roomId}} </block></view>
+      <view hidden="true">{{meetingRoom.roomId}} </view>
       <view > 会议室: {{meetingRoom.roomName}} </view>
       <view>会议日期: {{meetingRoom.date}}</view>
       <view>开始时间: {{meetingRoom.beginTime}}</view>
