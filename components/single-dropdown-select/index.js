@@ -35,10 +35,12 @@ Component({
       //再次执行动画，注意这里一定，一定，一定是this.animation来使用动画
       this.setData({
         selectShow: false,
-        selectText: nowDataIndex.name,
+        selectText: nowDataIndex.name || nowDataIndex,
       })
-      console.log(nowDataIndex.id)
-      this.triggerEvent('select', nowDataIndex.id)
+      console.log(nowDataIndex.id || nowDataIndex)
+    
+      this.triggerEvent('select', nowDataIndex.id || nowDataIndex)
+      
     }
   }
 })
