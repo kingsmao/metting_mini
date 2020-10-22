@@ -1,4 +1,6 @@
 import {request} from "../../request/index.js";
+import {getSetting, chooseAddress, openSetting, showModal, showToast} from "../../utils/asyncWx.js";
+import regeneratorRuntime from '../../lib/runtime/runtime';
 
 Page({
 
@@ -63,7 +65,7 @@ Page({
 
     },
 
-    formSubmit(e) {
+    async formSubmit(e) {
         const roomId = this.data.meetingRoom.roomId;
         const departmentId = this.data.departmentId;
         const openId = wx.getStorageSync('openid');
@@ -71,6 +73,28 @@ Page({
         const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
         const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
         const userName = this.data.meetingRoom.userName;
+        console.log("departmentId" , departmentId)
+        console.log("meetingName" , meetingName)
+        console.log("userName" , userName)
+        if(departmentId === '') {
+            await showToast({
+              title: '请选择部门'
+            })
+            return;
+        }
+        if(meetingName === '') {
+            await showToast({
+              title: '请选择会议主题'
+            })
+            return;
+        }
+        if(userName === '') {
+            console.log("userName is null")
+            await showToast({
+              title: '用户名不能为空'
+            })
+            return;
+        }
         request({
             url: "/reserveMeetingRoom", method: "POST", data: {
                 roomId,
