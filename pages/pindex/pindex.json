@@ -1,6 +1,6 @@
 {
+  "navigationBarTitleText":"下拉测试",
   "usingComponents": {
     "single-dropdown-select": "/components/single-dropdown-select/index"
-  },
-  "navigationBarTitleText": "预定会议室"
+  }
 }

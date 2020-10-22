@@ -31,6 +31,16 @@ Page({
         },
     },
 
+    select: function(e) {
+        console.log("fdsfsdf" + e.detail)
+
+        this.setData({
+            reserveMeetingParams : {
+                departmentId: e.detail
+            }
+        })
+    },
+      
     /**
      * 生命周期函数--监听页面加载
      */
@@ -53,19 +63,19 @@ Page({
             this.setData({
                 meetingRoom: result
             })
-            console.log(this.meetingRoom)
         })
 
     },
 
     formSubmit(e) {
         const roomId = this.data.meetingRoom.roomId;
-        const departmentId = e.detail.value.departmentId;
+        const departmentId = this.data.reserveMeetingParams.departmentId;
         const openId = wx.getStorageSync('openid');
         const meetingName = e.detail.value.meetingName;
         const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
         const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
         const userName = this.data.meetingRoom.userName;
+
         request({
             url: "/reserveMeetingRoom", method: "POST", data: {
                 roomId,

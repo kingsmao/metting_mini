@@ -28,11 +28,12 @@
       <view>开始时间: {{meetingRoom.beginTime}}</view>
       <view>结束时间: {{meetingRoom.endTime}}</view>
       <view>部门: 
-        <radio-group name="departmentId">
+        <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
+        <!-- <radio-group name="departmentId">
           <view wx:for="{{meetingRoom.departmentList}}" wx:for-item="department" wx:for-index="index" wx:key="id" >
             <radio value="{{department.id}}" checked="true"/>{{department.name}}
           </view>
-        </radio-group>
+        </radio-group> -->
       </view>
 
       <view>
