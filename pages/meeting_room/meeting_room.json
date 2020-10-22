@@ -2,5 +2,6 @@
   "usingComponents": {
     "single-dropdown-select": "/components/single-dropdown-select/index"
   },
-  "navigationBarTitleText": "预定会议室"
+  "navigationBarTitleText": "预定会议室",
+  "navigationBarBackgroundColor": "#008B8B"
 }

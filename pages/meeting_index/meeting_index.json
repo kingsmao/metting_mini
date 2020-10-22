@@ -1,5 +1,6 @@
 {
   "usingComponents": {
   },
-  "navigationBarTitleText": "预定会议室"
+  "navigationBarTitleText": "当前会议室",
+  "navigationBarBackgroundColor": "#008B8B"
 }

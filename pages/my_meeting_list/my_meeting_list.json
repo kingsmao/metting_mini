@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "我的预定"
+  "navigationBarTitleText": "我的预定",
+  "navigationBarBackgroundColor": "#008B8B"
 }
