@@ -1,2 +1,18 @@
 <!--pages/my_meeting_detail/my_meeting_detail.wxml-->
-<text>pages/my_meeting_detail/my_meeting_detail.wxml</text>
+<view class="meetingDetail">          
+  <view hidden="true">{{myMeetingDetail.roomId}}</view>
+  <view> 会议室: {{myMeetingDetail.roomName}}</view>
+  <view hidden="true">{{myMeetingDetail.meetingId}}</view>
+  <view> 会议名称: {{myMeetingDetail.meetingName}}</view>
+  <view> 会议描述: {{myMeetingDetail.description}}</view>
+  <view> 会议开始时间: {{myMeetingDetail.beginTime}}</view>
+  <view> 会议结束时间: {{myMeetingDetail.endTime}}</view>
+  <view> 所属部门: {{myMeetingDetail.departmentName}}</view>
+  <view> 预定用户: {{myMeetingDetail.userName}}</view>
+  <view hidden="true">{{myMeetingDetail.status}}</view>
+  <view> 预定状态: {{myMeetingDetail.statusMsg}}</view>
+
+  <view >
+    <button bindtap='deleteMeeting' data-item='{{myMeetingDetail.meetingId}}'>取消预定</button>
+  </view>
+</view>

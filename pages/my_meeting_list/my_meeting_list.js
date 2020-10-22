@@ -29,6 +29,13 @@ Page({
             })
     },
 
+    goToMeetingDetail: function(e) {
+        var item = e.currentTarget.dataset.item;
+        console.log(item);
+        wx.navigateTo({
+            url: '../my_meeting_detail/my_meeting_detail?meetingId=' + item
+          })
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
