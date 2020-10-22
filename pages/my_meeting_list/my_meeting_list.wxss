@@ -18,9 +18,10 @@ background-color:  white;
 .s1{
   margin-top: 1px;
   margin-left: 11px;
+  color: white;
 }
 .ok_back{
-  background-color: 	#87CEEB;
+  background-color: 	#008B8B;
 }
 .force{
   border-radius: 10px;
@@ -29,5 +30,5 @@ background-color:  white;
   margin-right: auto;
 }
 .over_back{
-  background-color: 	#D3D3D3;
+  background-color: 		#696969;
 }
