@@ -83,7 +83,7 @@ page,view,text,swiper,swiper-item,image,navigator{
 }
 
 .button_order{
-  background-color: #8FBC8F;
+  background-color: #5F9EA0;
   margin-right: -9px;
   margin-top: 0px;
   width: 25%;
@@ -133,11 +133,14 @@ page,view,text,swiper,swiper-item,image,navigator{
   color: black;
   border-radius: 5px;
   margin-top: -24rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+  line-height: 20px;
 }
 .secondOne {
   width: 50px;
   height: 25px;
-  background-color:#8FBC8F;
+  background-color:#5F9EA0;
   text-align: center;
   margin-top: 9px;
   margin-bottom: 5px;
