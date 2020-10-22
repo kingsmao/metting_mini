@@ -44,14 +44,12 @@
             <view class="weui-cell__bd">会议主题:</view>
             <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
         </view>
-          <view class="weui-cell weui-cell_active">
-              <view class="weui-cell__hd">
-                  <view class="weui-label">预定人:</view>
-              </view>
-              <view class="weui-cell__bd">
-                  <input class="weui-input" placeholder="{{meetingRoom.userName}}"/>
-              </view>
-          </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">预定人:</view>
+            <view class="weui-cell__ft">
+              <input class="weui-input" placeholder="{{meetingRoom.userName}}"/>
+            </view>
+        </view>
       </view>
       <view>
         <button  class="button_search"formType="submit">提交</button>
