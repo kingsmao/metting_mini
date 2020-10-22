@@ -1,5 +1,5 @@
 /* pages/meeting_index/meeting_index.wxss */
-
+@import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
 
 .pickTime {
     position: fixed;

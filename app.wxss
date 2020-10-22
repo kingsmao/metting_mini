@@ -32,10 +32,154 @@ page,view,text,swiper,swiper-item,image,navigator{
 
 /**appo.wxss**/
 .container {
-  height: 100%;
+  width: 100%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 } 
+
+.container_up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 70vh;
+  overflow-y: scroll;
+} 
+
+.container_down {
+  width: 100%;
+} 
+
+.box-upper {
+  width:90%;
+  min-height: 200rpx;
+  padding: 20px;
+  background-color: rgb(32, 114, 135);
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 18rpx;
+}
+.box-middle {
+  width:100%;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 10rpx;
+  height: 35vh;
+}
+.box-bottom {
+  width:100%;
+  height: 200rpx;
+  align-items: center;
+  background-color: red;
+}
+
+.button_order{
+  background-color: rgb(18, 127, 255);
+  margin-right: -9px;
+  margin-top: -11px;
+  width: 25%;
+  height: 60%;
+  text-align:center;
+  float: right;
+  border-radius: 10px;
+}
+
+.button_search{
+  width: 42%;
+  height: 38px;
+  text-align:center;
+  margin-left: 5%;
+  float: left;
+}
+
+.button_my{
+  width: 42%;
+  height: 38px;
+  text-align:center;
+  margin-right: 5%;
+  float: right;
+}
+.color_blue{
+  background-color: rgb(18, 127, 255);
+}
+
+
+.first {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: white;
+  color: black;
+}
+.secondOne {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(197, 255, 28);
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  float: left;
+}
+.secondTwo {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(79, 197, 197);
+  float: left;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.secondThree {
+  width: 50px;
+  height: 25px;
+  background-color: white;
+  float: left;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: center;
+}
+.secondFore {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(18, 127, 255);
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: center;
+  float: left;
+}
+.third,.fifth {
+  clear: both;
+  width: 350px;
+  height: 35px;
+  background-color: rgb(215, 129, 26);
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.thirdOne,.fifthOne {
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.thirdTwo,.fifthTwo {
+  width: 160px;
+  height: 25px;
+  background-color: rgb(191, 198, 84);
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 5px;
+}

@@ -17,26 +17,5 @@
     "navigationBarTitleText": "ChainUp会议室预定",
     "navigationBarTextStyle": "black"
   },
-  "tabBar": {
-    "color": "#999",
-    "selectedColor": "#ff2d4a",
-    "backgroundColor": "#fafafa",
-    "position": "bottom",
-    "borderStyle": "black",
-    "list": [
-      {
-        "pagePath": "pages/meeting_index/meeting_index",
-        "text": "预定",
-        "iconPath": "icons/home.png",
-        "selectedIconPath": "icons/home-o.png"
-      },
-      {
-        "pagePath": "pages/my_meeting_list/my_meeting_list",
-        "text": "我的会议室",
-        "iconPath": "icons/my.png",
-        "selectedIconPath": "icons/my-o.png"
-      }
-    ]
-  },
   "sitemapLocation": "sitemap.json"
 }

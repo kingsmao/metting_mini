@@ -1,0 +1,25 @@
+{
+  "name": "meeting_mini",
+  "version": "1.0.0",
+  "description": "会议室预定小程序",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huazimao/metting_mini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huazimao/metting_mini/issues"
+  },
+  "homepage": "https://github.com/huazimao/metting_mini#readme",
+  "dependencies": {
+    "weui-miniprogram": "^1.0.5"
+  }
+}

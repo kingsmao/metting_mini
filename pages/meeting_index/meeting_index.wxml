@@ -1,51 +1,58 @@
 <!--pages/meeting_index/meeting_index.wxml-->
-<view class="pyg_index">
-
-    <view>
-        <view class="meetingList" wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
-            <view class="meetingTd">房间名字:{{room.roomName}}</view>
-            <view class="meetingTd">{{room.description}}</view>
-            <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
-                <view class="meetingTd">会议室主题：{{meeting.meetingName}}</view>
-                <view class="meetingTd">开始时间：{{meeting.beginTime}}</view>
-                <view class="meetingTd">结束时间：{{meeting.endTime}}</view>
+<view class="container_up">
+    <view class="box-upper" wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
+        <view class="button_order">
+            预定
+        </view>
+        <view>
+            
+            <view class="first">{{room.roomName}}</view>
+            <view class="secondOne">6人</view>
+            <view class="secondTwo">沙发</view>
+            <view class="secondThree">投影仪</view>
+            <view class="secondFore">白板</view>
+        </view>
+        <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
+            <view class="third">
+                <view class="thirdOne">12:00 -16:30</view>
+                <view class="thirdTwo">Saas 需求评审</view>
             </view>
         </view>
     </view>
-
-
-
-
-<!-- 底部工具栏 -->
-<view class="pickTime">
-    <view class="pickDate">
-        <!--<picker start="2020-09-01" end="2025-12-01" > 是限制时间组件范围-->
-        <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
-            <view >
-                日期: {{date}}
-            </view>
-        </picker>
-    </view>
-
-    <view class="startTime">
-        <picker mode="time" value="{{beginTime}}"  bindchange="bindTimeStartChange">
-            <view class="picker">
-                开始时间: {{beginTime}}
-            </view>
-        </picker>
-    </view>
-
-
-    <view class="endTime">
-        <picker mode="time" value="{{endTime}}"  bindchange="bindTimeEndChange">
-            <view class="picker">
-                结束时间: {{endTime}}
-            </view>
-        </picker>
-    </view>
-
-    <view class="search" bindtap="searchByTime" >
-        搜索
-    </view>
 </view>
+
+<view class="container_down">
+    <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <view class="weui-label">会议日期</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="weui-input">{{date}}</view>
+            </picker>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <view class="weui-label">开始时间</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="weui-input">{{time}}</view>
+            </picker>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <view class="weui-label">结束时间</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="weui-input">{{time}}</view>
+            </picker>
+        </view>
+    </view>
+<button type="primary" class="button_search">搜索</button>
+<button type="primary" class="button_my">我的</button>
 </view>
+

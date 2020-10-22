@@ -1,0 +1,10 @@
+@import "../../weui.wxss";
+.index{
+    font-size: 100rpx;
+    margin-top: 40%;
+    text-align: center;
+}
+
+.meeting{
+    
+}

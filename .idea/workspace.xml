@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/meeting_index/meeting_index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_index/meeting_index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jC8L6OgHaCDlgDnF0lSaJFseEc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mixin" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\qinxuan\IdeaProjects\meeting_mini\mixin" />
+      <recent name="C:\Users\qinxuan\IdeaProjects\meeting_mini" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="" />
+      <created>1603296653940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603296653940</updated>
+      <workItem from="1603296655949" duration="1872000" />
+      <workItem from="1603332796287" duration="4559000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(meeting_mini): 更新weui">
+      <created>1603334162916</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603334162917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(meeting_mini): 更新weui" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(meeting_mini): 更新weui" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603299280194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603299280194" />
+    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603334162329">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603334162329" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603343032794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" key="DiffContextDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603343032794" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299408263" />
+    <state x="709" y="231" key="RollbackChangesDialog" timestamp="1603343143697">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603343143697" />
+    <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299956380" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603334167332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603334167332" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603334146002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603334146002" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1603332803544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603332803544" />
+    <state x="656" y="311" key="git4idea.merge.GitPullDialog" timestamp="1603343044188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603343044188" />
+  </component>
+</project>
