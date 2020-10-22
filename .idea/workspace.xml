@@ -7,12 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my_meeting_detail/my_meeting_detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_meeting_detail/my_meeting_detail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603386271106</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat(meeting_mini): 调整样式">
+      <created>1603388104486</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603388104486</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,10 +212,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603299280194" />
-    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603386270397">
+    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603388103828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603386270397" />
+    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603388103828" />
     <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603384496574" />
     <state x="92" y="92" width="1095" height="495" key="DiffContextDialog" timestamp="1603371270980">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -232,10 +233,10 @@
     <state x="473" y="83" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603357299597" />
     <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603371128578" />
     <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299956380" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603386278485">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603388107995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603386278485" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603388107995" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603384501958" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603334146002">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -25,6 +25,3 @@
 .box_with{
   justify-content: space-between;
 }
-.force_bottom{
-  margin-block: 0px;
-}

@@ -181,3 +181,8 @@ page,view,text,swiper,swiper-item,image,navigator{
 .clearfix:after {
   clear: both;
 }
+.force_bottom{
+  width:90%;
+  position: absolute;
+  bottom:10px;
+}

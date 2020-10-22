@@ -51,8 +51,8 @@
             </view>
         </view>
       </view>
-      <view>
-        <button  type="position:fixed;width:100%;bottom:0" formType="submit">提交</button>
+      <view class="force_bottom">
+        <button  type="primary" formType="submit">提交</button>
       </view>
     </form>
   </view>
