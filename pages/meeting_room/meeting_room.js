@@ -12,7 +12,8 @@ Page({
             beginTime: '',
             endTime: '',
             departmentId: '',
-            meetingName: ''
+            meetingName: '',
+            userName: ''
         },
 
         /*预定会议室初始化数据*/
@@ -64,6 +65,7 @@ Page({
         const meetingName = e.detail.value.meetingName;
         const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
         const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
+        const userName = this.data.meetingRoom.userName;
         request({
             url: "/reserveMeetingRoom", method: "POST", data: {
                 roomId,
@@ -71,10 +73,14 @@ Page({
                 openId,
                 meetingName,
                 beginTime,
-                endTime
+                endTime,
+                userName
             }
         }).then(result => {
             console.log(result);
+            wx.navigateTo({
+                url: '../meeting_index/meeting_index'
+              })
         })
         
       },

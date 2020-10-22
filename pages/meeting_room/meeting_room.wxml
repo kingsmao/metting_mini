@@ -39,8 +39,10 @@
       <view>
         会议名称: <input auto-focus type="text" name="meetingName" placeholder="输入会议名称" />
       </view>
-
-      <view> 预定人: {{meetingRoom.userName}}</view>
+      
+      <view> 预定人: 
+        <input auto-focus type="text" name="userName" placeholder="{{meetingRoom.userName}}" />
+      </view>
 
       <view >
         <button type="primary" formType="submit">Submit</button>
