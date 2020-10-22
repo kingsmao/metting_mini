@@ -2,6 +2,7 @@
 import {request} from "../../request/index.js";
 import {getSetting, chooseAddress, openSetting, showModal, showToast} from "../../utils/asyncWx.js";
 import regeneratorRuntime from '../../lib/runtime/runtime';
+import {formatTime, formatDate,getTime,getTimePlusOne} from "../../utils/util.js";
 
 
 // pages/meeting_index/meeting_index.js
@@ -11,9 +12,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        date: '',
-        beginTime: '',
-        endTime: '',
+        date: formatDate(new Date()),
+        beginTime: getTime(new Date()),
+        endTime: getTimePlusOne(new Date()),
         availableMeetingList: []
     },
 
