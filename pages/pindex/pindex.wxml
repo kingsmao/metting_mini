@@ -1,6 +1,0 @@
-<view class="weui-cell">
-    <view class="weui-cell__hd">类型：</view>
-    <view class="weui-cell__bd">
-    <single-dropdown-select prop-array='{{selectArray}}'  bind:select='select' />
-  </view>
-</view>

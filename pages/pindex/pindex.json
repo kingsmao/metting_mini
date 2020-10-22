@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText":"下拉测试",
-  "usingComponents": {
-    "single-dropdown-select": "/components/single-dropdown-select/index"
-  }
-}

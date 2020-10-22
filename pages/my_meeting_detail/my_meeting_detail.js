@@ -60,6 +60,10 @@ Page({
     })
         .then(result => {
             console.log(result)
+
+            wx.navigateTo({
+                url: '../my_meeting_list/my_meeting_list'
+              })
         })
     },
     /**
