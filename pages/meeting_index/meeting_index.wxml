@@ -7,7 +7,7 @@
             </view>
             <view>
                 <view class="first">{{room.roomName}}</view>
-                <view class="secondOne">{{room.roomPersonCount}}</view>
+                <view class="secondOne">{{room.roomPersonCount}}人</view>
                 <view class="secondOne">沙发</view>
                 <view class="secondOne">投影仪</view>
                 <view class="secondOne">白板</view>
