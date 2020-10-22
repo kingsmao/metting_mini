@@ -1,2 +1,27 @@
 <!--pages/meeting_room/meeting_room.wxml-->
-<text>pages/meeting_room/meeting_room.wxml</text>
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+  
+      <view>
+        会议室: {{meetingRoom.roomName}}
+      </view>
+
+      <view>会议日期: {{meetingRoom.date}}</view>
+      <view>开始时间: {{meetingRoom.beginTime}}</view>
+      <view>结束时间: {{meetingRoom.endTime}}</view>
+      <view>部门: </view>
+
+      <view>
+        会议名称: <input auto-focus type="text" placeholder="输入会议名称" />
+      </view>
+
+      <view> 预定人: {{meetingRoom.userName}}</view>
+
+      <view >
+        <button>Submit</button>
+      </view>
+    </form>
+  </view>
+
+</view>

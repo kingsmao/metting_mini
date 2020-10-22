@@ -44,6 +44,25 @@ Page({
         })
     },
 
+    goToReserve: function(e) {
+        var item = e.currentTarget.dataset.item;
+        const beginTime = this.data.beginTime;
+        const endTime = this.data.endTime;
+        const date = this.data.date;
+        console.log(item);
+        wx.navigateTo({
+            url: '../meeting_room/meeting_room?roomId=' + item + 
+            "&&date=" + date + 
+            "&&beginTime=" + beginTime + 
+            "&&endTime=" + endTime
+          })
+    },
+
+    goToMyMeeting: function() {
+        wx.navigateTo({
+            url: '../my_meeting_list/my_meeting_list'
+          })
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

@@ -20,6 +20,7 @@ Page({
         meetingRoom: {
             roomId: '',
             roomName: '',
+            date: '',
             beginTime: '',
             endTime: '',
             userName: '',
@@ -34,8 +35,29 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        const roomId = options.roomId;
+        const beginTime = options.beginTime;
+        const endTime = options.endTime;
+        const date = options.date;
+        const openId = wx.getStorageSync('openid');
+        request({
+            url: "/meetingRoomInfo", method: "GET", data: {
+                roomId,
+                beginTime,
+                endTime,
+                date,
+                openId
+            }
+        }).then(result => {
+            console.log(result);
+            this.setData({
+                meetingRoom: result
+            })
+        })
 
     },
+
+
 
     /**
      * 生命周期函数--监听页面初次渲染完成
