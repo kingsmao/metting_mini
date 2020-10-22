@@ -47,7 +47,7 @@
         <view class="weui-cell">
             <view class="weui-cell__bd">预定人:</view>
             <view class="weui-cell__ft">
-              <input class="weui-input" placeholder="{{meetingRoom.userName}}"/>
+              <input class="weui-input" name="userName" placeholder="{{meetingRoom.userName}}" />
             </view>
         </view>
       </view>
