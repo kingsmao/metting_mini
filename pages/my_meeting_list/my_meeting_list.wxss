@@ -14,3 +14,12 @@
 .all_gray{
 background-color:  #D3D3D3;
 }
+.s1{
+  margin-top: 1px;
+}
+.ok_back{
+  background-color: 	#87CEEB;
+}
+.over_back{
+  background-color: 	#D3D3D3;
+}

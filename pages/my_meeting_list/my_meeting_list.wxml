@@ -22,14 +22,15 @@
 <view class="all_gray">
     <view class="my_meeting_list"  wx:for="{{myMeetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
         <view bindtap="goToMeetingDetail" data-item="{{meeting.meetingId}}">
-            <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cells weui-cells_after-title ok_back">
                 <view hidden="true">房间id:{{meeting.roomId}}</view>
                 <view hidden="true">会议id:{{meeting.meetingId}}</view>
-                <view >日期：{{meeting.dateTimeRange}}</view>
-                <view >时间：{{meeting.dateTimeRange}}</view>
-                <view >会议室: {{meeting.roomName}}</view>
-                <view >部门: {{meeting.departmentName}}</view>
-                <view >主题: {{meeting.meetingName}}</view>
+                <view class="s1">日期：{{meeting.date}}</view>
+                <view class="s1">时间：{{meeting.beginTime}} -- {{meeting.endTime}}</view>
+                <view class="s1">会议室: {{meeting.roomName}}</view>
+                <view class="s1">部门: {{meeting.departmentName}}</view>
+                <view class="s1">主题: {{meeting.meetingName}}</view>
+                <view class="s1">状态: {{meeting.statusMsg}}</view>
             </view>
         </view>
     </view>
