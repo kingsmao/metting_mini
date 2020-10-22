@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603363526295</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(meeting_mini): 调整样式">
+      <created>1603365540914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603365540914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,33 +107,38 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(meeting_mini): 更新weui" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(meeting_mini): 更新weui" />
+    <MESSAGE value="feat(meeting_mini): 调整样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(meeting_mini): 调整样式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603299280194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603299280194" />
-    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603363525629">
+    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603366135657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603363525629" />
+    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603366135657" />
     <state x="92" y="92" width="1095" height="495" key="DiffContextDialog" timestamp="1603363523736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1603357388862" />
     <state x="92" y="92" key="DiffContextDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603363523736" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299408263" />
-    <state x="473" y="83" key="RollbackChangesDialog" timestamp="1603357299597">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="473" y="83" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603357299597" />
-    <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603343143697" />
-    <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299956380" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603363530326">
+    <state x="669" y="236" key="MultipleFileMergeDialog" timestamp="1603366159747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603363530326" />
+    <state x="669" y="236" key="MultipleFileMergeDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603366159747" />
+    <state x="709" y="231" key="RollbackChangesDialog" timestamp="1603366273682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="473" y="83" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603357299597" />
+    <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603366273682" />
+    <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299956380" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603366142463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603366142463" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603334146002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
