@@ -25,7 +25,10 @@ const getTime = date => {
 }
 
 const getTimePlusOne = date => {
-    const hour = date.getHours() + 1
+    var hour = date.getHours();
+    if (hour >= 23) {
+        hour = "00";
+    }
     const minute = date.getMinutes()
     return [hour, minute].map(formatNumber).join(':')
 }
