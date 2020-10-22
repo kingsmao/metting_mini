@@ -51,7 +51,7 @@
             <view class="weui-cell__ft">{{myMeetingDetail.userName}}</view>
         </view>
       </view>
-      <view class="force_bottom">
+      <view class="force_bottom" hidden="{{ !myMeetingDetail.canDelete}}">
         <button  type="primary" bindtap='deleteMeeting' data-item='{{myMeetingDetail.meetingId}}'>取消预定</button>
       </view>
     </form>
