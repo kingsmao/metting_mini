@@ -12,7 +12,7 @@
   <view hidden="true">{{myMeetingDetail.status}}</view>
   <view> 预定状态: {{myMeetingDetail.statusMsg}}</view>
 
-  <view >
+  <view hidden="{{ !myMeetingDetail.canDelete}}" >
     <button bindtap='deleteMeeting' data-item='{{myMeetingDetail.meetingId}}'>取消预定</button>
   </view>
 </view>
