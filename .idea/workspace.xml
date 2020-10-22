@@ -6,11 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/single-dropdown-select/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/single-dropdown-select/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/single-dropdown-select/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/single-dropdown-select/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/single-dropdown-select/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/single-dropdown-select/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/meeting_room/meeting_room.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_room/meeting_room.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/meeting_room/meeting_room.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +29,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mixin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -43,18 +43,7 @@
       <recent name="C:\Users\qinxuan\IdeaProjects\meeting_mini" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -156,20 +145,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(meeting_mini): 更新weui" />

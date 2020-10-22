@@ -6,16 +6,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        /*预定会议室参数*/
-        reserveMeetingParams: {
-            roomId: '',
-            beginTime: '',
-            endTime: '',
-            departmentId: '',
-            meetingName: '',
-            userName: ''
-        },
-
+        meetingTypeList: [
+            "分享会", "技术评审", "需求评审", "周会", "项目沟通", "APP同步会", "项目培训", "新业务培训", "业务考核"
+        ],
         /*预定会议室初始化数据*/
         meetingRoom: {
             roomId: '',
@@ -27,17 +20,21 @@ Page({
             /*已有会议室列表*/
             meetingList: [],
             /*部门列表*/
-            departmentList: [],
+            departmentList: []    
         },
+        departmentId:'',
+        meetingName:''
     },
 
     select: function(e) {
-        console.log("fdsfsdf" + e.detail)
-
         this.setData({
-            reserveMeetingParams : {
-                departmentId: e.detail
-            }
+            departmentId: e.detail,
+        })
+    },
+
+    selectMeetingType: function(e) {
+        this.setData({
+            meetingName: e.detail
         })
     },
       
@@ -59,7 +56,6 @@ Page({
                 openId
             }
         }).then(result => {
-            //console.log(result);
             this.setData({
                 meetingRoom: result
             })
@@ -69,13 +65,12 @@ Page({
 
     formSubmit(e) {
         const roomId = this.data.meetingRoom.roomId;
-        const departmentId = this.data.reserveMeetingParams.departmentId;
+        const departmentId = this.data.departmentId;
         const openId = wx.getStorageSync('openid');
-        const meetingName = e.detail.value.meetingName;
+        const meetingName = this.data.meetingName;
         const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
         const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
         const userName = this.data.meetingRoom.userName;
-
         request({
             url: "/reserveMeetingRoom", method: "POST", data: {
                 roomId,

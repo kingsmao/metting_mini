@@ -38,11 +38,11 @@
         </view>
         <view class="weui-cell box_with">
             <view class="weui-cell__bd">部门:</view>
-            <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
+            <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' />
         </view>
         <view class="weui-cell box_with">
             <view class="weui-cell__bd">会议主题:</view>
-            <single-dropdown-select prop-array='{{meetingRoom.departmentList}}'  bind:select='select' name="departmentId"/>
+            <single-dropdown-select prop-array='{{meetingTypeList}}'  bind:select='selectMeetingType'/>
         </view>
           <view class="weui-cell weui-cell_active">
               <view class="weui-cell__hd">

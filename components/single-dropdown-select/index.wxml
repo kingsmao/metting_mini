@@ -4,6 +4,6 @@
          <view class="{{selectShow ? 'icon-up' : 'icon-down'}}"></view>
     </view>
     <view class='ms-options' wx:if="{{selectShow}}">
-        <view wx:for="{{propArray}}" data-index="{{index}}" wx:key='index' class='ms-option' bindtap='setText'>{{item.name}}</view>
+        <view wx:for="{{propArray}}" data-index="{{index}}" wx:key='index' class='ms-option' bindtap='setText'>{{item.name || item}}</view>
     </view>
 </view>
