@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7e5871e2-8b53-48fb-a360-2e7c79c44792" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my_meeting_list/my_meeting_list.wxss" afterDir="false" />
     </list>
@@ -17,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jC8L6OgHaCDlgDnF0lSaJFseEc" />
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603371273802</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(meeting_mini): 调整样式">
+      <created>1603375597019</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603375597019</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,10 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603299280194" />
-    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603371273137">
+    <state x="556" y="113" key="CommitChangelistDialog2" timestamp="1603375596385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603371273137" />
+    <state x="556" y="113" key="CommitChangelistDialog2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603375596385" />
     <state x="92" y="92" width="1095" height="495" key="DiffContextDialog" timestamp="1603371270980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -164,10 +171,10 @@
     <state x="473" y="83" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1603357299597" />
     <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603371128578" />
     <state x="709" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603299956380" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603371282673">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603375606612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603371282673" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603375606612" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603334146002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,9 +187,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603357388852" />
-    <state x="656" y="311" key="git4idea.merge.GitPullDialog" timestamp="1603371136962">
+    <state x="656" y="311" key="git4idea.merge.GitPullDialog" timestamp="1603375943764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603371136962" />
+    <state x="656" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1.-1080.1920.1040@0.0.1920.1040" timestamp="1603375943764" />
   </component>
 </project>
