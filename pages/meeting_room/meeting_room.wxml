@@ -2,9 +2,6 @@
 <view class="container">
 
   <view class="box-upper " wx:for="{{meetingRoom.meetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
-          <view class="button_order">
-              预定
-          </view>
           <view>
               <view class="first">{{room.roomName}}</view>
               <view class="secondOne">{{room.roomPersonCount}}</view>

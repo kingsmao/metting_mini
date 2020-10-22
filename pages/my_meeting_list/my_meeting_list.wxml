@@ -22,7 +22,7 @@
 <view class="all_gray">
     <view class="my_meeting_list"  wx:for="{{myMeetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
         <view bindtap="goToMeetingDetail" data-item="{{meeting.meetingId}}">
-            <view class="weui-cells weui-cells_after-title ok_back">
+            <view class="weui-cells weui-cells_after-title {{meeting.status == 0? ok_back:over_back}}">
                 <view hidden="true">房间id:{{meeting.roomId}}</view>
                 <view hidden="true">会议id:{{meeting.meetingId}}</view>
                 <view class="s1">日期：{{meeting.date}}</view>
