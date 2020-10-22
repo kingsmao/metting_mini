@@ -63,7 +63,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   border-radius: 10px;
   align-items: center;
   margin-top: 18rpx;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 .box-middle {
   width:100%;
