@@ -33,11 +33,11 @@ Page({
         const date = this.data.date;
         request({
             url: "/availableRoomByTime", method: "GET", data: {
-                beginTime: date + " " + beginTime + ":00",
-                endTime: date + " " + endTime + ":00"
+                beginTime: date + "-" + beginTime,
+                endTime: date + "-" + endTime
             }
         }).then(result => {
-            console.log(result)
+            console.log(result);
             this.setData({
                 availableMeetingList: result
             })

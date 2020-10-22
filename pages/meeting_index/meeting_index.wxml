@@ -3,8 +3,8 @@
 
     <view>
         <view class="meetingList" wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
-            <view class="meetingTd">房间id:{{room.roomId}}</view>
             <view class="meetingTd">房间名字:{{room.roomName}}</view>
+            <view class="meetingTd">{{room.description}}</view>
             <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
                 <view class="meetingTd">会议室主题：{{meeting.meetingName}}</view>
                 <view class="meetingTd">开始时间：{{meeting.beginTime}}</view>
@@ -12,8 +12,6 @@
             </view>
         </view>
     </view>
-
-</view>
 
 
 
@@ -50,6 +48,4 @@
         搜索
     </view>
 </view>
-<view class="footer_tool">
-    
 </view>
