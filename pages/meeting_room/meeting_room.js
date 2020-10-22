@@ -12,7 +12,6 @@ Page({
             beginTime: '',
             endTime: '',
             departmentId: '',
-            departmentName: '',
             meetingName: ''
         },
 
@@ -49,15 +48,19 @@ Page({
                 openId
             }
         }).then(result => {
-            console.log(result);
+            //console.log(result);
             this.setData({
                 meetingRoom: result
             })
+            console.log(this.meetingRoom)
         })
 
     },
 
-
+    formSubmit(e) {
+        var that = this;
+        console.log('form发生了submit事件，携带数据为：', e.detail.value.departmentId)
+      },
 
     /**
      * 生命周期函数--监听页面初次渲染完成

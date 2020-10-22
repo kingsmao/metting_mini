@@ -1,25 +1,29 @@
 <!--pages/meeting_room/meeting_room.wxml-->
 <view class="container">
   <view class="page-body">
-    <form catchsubmit="formSubmit" catchreset="formReset">
-  
-      <view>
-        会议室: {{meetingRoom.roomName}}
-      </view>
-
+    <form catchsubmit="formSubmit" >
+      <view >
+      <block hidden="true">{{meetingRoom.roomId}} </block></view>
+      <view > 会议室: {{meetingRoom.roomName}} </view>
       <view>会议日期: {{meetingRoom.date}}</view>
       <view>开始时间: {{meetingRoom.beginTime}}</view>
       <view>结束时间: {{meetingRoom.endTime}}</view>
-      <view>部门: </view>
+      <view>部门: 
+        <radio-group name="departmentId">
+          <view wx:for="{{meetingRoom.departmentList}}" wx:for-item="department" wx:for-index="index" wx:key="id" >
+            <radio value="{{department.id}}" checked="true"/>{{department.name}}
+          </view>
+        </radio-group>
+      </view>
 
       <view>
-        会议名称: <input auto-focus type="text" placeholder="输入会议名称" />
+        会议名称: <input auto-focus type="text" name="meetingName" placeholder="输入会议名称" />
       </view>
 
       <view> 预定人: {{meetingRoom.userName}}</view>
 
       <view >
-        <button>Submit</button>
+        <button type="primary" formType="submit">Submit</button>
       </view>
     </form>
   </view>
