@@ -1,6 +1,6 @@
 <!--pages/meeting_index/meeting_index.wxml-->
 <view class="container_up">
-    <view class="box-upper" wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
+    <view class="box-upper " wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
         <view bindtap="goToReserve" data-item="{{room.roomId}}">
             <view class="button_order">
                 预定
@@ -8,14 +8,16 @@
             <view>
                 <view class="first">{{room.roomName}}</view>
                 <view class="secondOne">6人</view>
-                <view class="secondTwo">沙发</view>
-                <view class="secondThree">投影仪</view>
-                <view class="secondFore">白板</view>
+                <view class="secondOne">沙发</view>
+                <view class="secondOne">投影仪</view>
+                <view class="secondOne">白板</view>
             </view>
-            <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
+            <view >
                 <view class="third">
-                    <view class="thirdOne">12:00 -16:30</view>
-                    <view class="thirdTwo">Saas 需求评审</view>
+                    <view class="thirdOne">12:00 -16:30 Saas 需求评审 特朗普</view>
+                </view>
+                <view class="third">
+                    <view class="thirdOne">12:00 -16:30 Saas 需求评审 特朗普</view>
                 </view>
             </view>
         </view>
