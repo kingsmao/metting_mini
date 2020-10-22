@@ -25,8 +25,8 @@ const getTime = date => {
 }
 
 const getTimePlusOne = date => {
-    var hour = date.getHours();
-    if (hour >= 23) {
+    var hour = date.getHours() + 1;
+    if (hour >= 24) {
         hour = "00";
     }
     const minute = date.getMinutes()
