@@ -17,6 +17,7 @@ background-color:  white;
 }
 .s1{
   margin-top: 1px;
+  margin-left: 11px;
 }
 .ok_back{
   background-color: 	#87CEEB;
