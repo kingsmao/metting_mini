@@ -58,8 +58,25 @@ Page({
     },
 
     formSubmit(e) {
-        var that = this;
-        console.log('form发生了submit事件，携带数据为：', e.detail.value.departmentId)
+        const roomId = this.data.meetingRoom.roomId;
+        const departmentId = e.detail.value.departmentId;
+        const openId = wx.getStorageSync('openid');
+        const meetingName = e.detail.value.meetingName;
+        const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
+        const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
+        request({
+            url: "/reserveMeetingRoom", method: "POST", data: {
+                roomId,
+                departmentId,
+                openId,
+                meetingName,
+                beginTime,
+                endTime
+            }
+        }).then(result => {
+            console.log(result);
+        })
+        
       },
 
     /**
