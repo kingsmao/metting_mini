@@ -11,9 +11,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        date: '2020-10-18',
-        beginTime: '11:01',
-        endTime: '12:01',
+        date: '',
+        beginTime: '',
+        endTime: '',
         availableMeetingList: []
     },
 
@@ -129,21 +129,21 @@ Page({
 
 
     bindDateChange: function (e) {
-        console.log('picker发送选择改变，携带值为', e.detail.value)
+        console.log('picker发送选择改变，bindDateChange', e.detail.value)
         this.setData({
             date: e.detail.value
         })
     },
 
     bindTimeStartChange: function (e) {
-        console.log('picker发送选择改变，携带值为', e.detail.value)
+        console.log('picker发送选择改变，bindTimeStartChange', e.detail.value)
         this.setData({
             beginTime: e.detail.value
         })
     },
 
     bindTimeEndChange: function (e) {
-        console.log('picker发送选择改变，携带值为', e.detail.value)
+        console.log('picker发送选择改变，bindTimeEndChange', e.detail.value)
         this.setData({
             endTime: e.detail.value
         })

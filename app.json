@@ -1,11 +1,11 @@
 {
-  "pages": [ 
+  "pages": [
     "pages/meeting_index/meeting_index",
     "pages/meeting_room/meeting_room",
     "pages/my_meeting_list/my_meeting_list",
     "pages/my_meeting_detail/my_meeting_detail",
-    
-    
+
+
     "pages/index/index",
     "pages/tabs/tabs",
     "pages/appo/appo",
