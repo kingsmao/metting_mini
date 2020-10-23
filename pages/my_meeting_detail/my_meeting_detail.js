@@ -1,5 +1,8 @@
 import {request} from "../../request/index.js";
 
+import {getSetting, chooseAddress, openSetting, showModal, showToast} from "../../utils/asyncWx.js";
+import regeneratorRuntime from '../../lib/runtime/runtime';
+
 Page({
 
     /**
@@ -49,22 +52,39 @@ Page({
             })
     },
 
-    deleteMeeting: function(e) {
+    async deleteMeeting(e) {
         var item = e.currentTarget.dataset.item;
-        console.log(item);
-        console.log(wx.getStorageSync('openid'));
         const openId = wx.getStorageSync('openid');
         const meetingId = item;
-        request({
-            url: "/cancelMeetingRoom?openId=" + openId + "&meetingId=" + meetingId , method: "POST"      
-    })
-        .then(result => {
-            console.log(result)
 
-            wx.navigateTo({
-                url: '../my_meeting_list/my_meeting_list'
-              })
+        wx.showModal({
+          title: '后悔药',
+          cancelText: '取消',
+          confirmText: '确认',
+          content: '怎么就后悔了呢？不是说好的一起拼秋裤吗？',
+          showCancel: true,
+          success: (result) => {
+              console.info(result)
+            if(result.confirm) {
+                request({
+                    url: "/cancelMeetingRoom?openId=" + openId + "&meetingId=" + meetingId , method: "POST"      
+                }).then(result => {
+                    console.log(result)
+        
+                    wx.navigateTo({
+                        url: '../my_meeting_list/my_meeting_list'
+                      })
+                })
+            } else {
+                
+            }
+            
+          },
+          fail: (res) => {
+              return
+          },
         })
+        
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
