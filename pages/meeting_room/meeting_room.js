@@ -72,7 +72,7 @@ Page({
         const meetingName = this.data.meetingName;
         const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
         const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
-        const userName = this.data.meetingRoom.userName;
+        const userName =  e.detail.value.userName;
         console.log("departmentId" , departmentId)
         console.log("meetingName" , meetingName)
         console.log("userName" , userName)
