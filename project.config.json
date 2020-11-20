@@ -35,7 +35,7 @@
     "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "2.6.1",
+  "libVersion": "2.14.0",
   "appid": "wx1f73d09d3bf7239f",
   "projectname": "samll-test",
   "debugOptions": {

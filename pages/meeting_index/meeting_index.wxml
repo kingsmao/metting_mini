@@ -21,16 +21,26 @@
 </view>
 
 <view class="container_down">
-    <view class="weui-cell weui-cell_active">
-        <view class="weui-cell__hd">
-            <view class="weui-label">预留位置</view>
-        </view>
-        <view class="weui-cell__bd">
-            <picker mode="time" value="{{endTime}}" start="00:00" end="24:00" bindchange="bindTimeEndChange">
-                <view class="weui-input">{{endTime}}</view>
-            </picker>
-        </view>
-    </view>
+	<view class="weui-cells__group weui-cells__group_form">
+		<view class="weui-cells weui-cells_radio">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="weui-cell weui-cell_active weui-check__label" wx:for="{{items}}" wx:key="name">
+                    <view class="weui-cell__bd">
+                            <view>{{item.value}}</view>
+                            </view>
+                            <view class="weui-cell__ft">
+                                <radio
+                                    class="weui-check"
+                                    value="{{item.name}}"
+                                    checked="{{item.checked}}"
+                                />
+                                <i class="weui-icon-checked"></i>
+                    </view>
+                </label>
+            </radio-group>
+		</view>
+	</view>
+		
     <view class="weui-cell weui-cell_active">
         <view class="weui-cell__hd">
             <view class="weui-label">会议日期</view>

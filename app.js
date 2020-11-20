@@ -26,8 +26,15 @@ App({
                     console.log('登录失败！' + res.errMsg)
                 }
             }
-        })
+        }),
 
+        wx.requestSubscribeMessage({
+            tmplIds: ['g4llUD-SEs_CT8VsiIjDnRJ4wj7pKbnSD6nxIoS2iyY'], // 此处可填写多个模板 ID，但低版本微信不兼容只能授权一个
+            success (res) {
+                console.log(res),
+                console.log('已授权接收订阅消息')
+            }
+        }),
 
         // 获取用户信息
         wx.getSetting({

@@ -134,7 +134,7 @@ Page({
                 delaySwitch,
             }
         }).then(result => {
-
+            console.log(result)
             wx.navigateTo({
                 url: '../meeting_index/meeting_index'
               })

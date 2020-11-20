@@ -15,7 +15,11 @@ Page({
         date: formatDate(new Date()),
         beginTime: getTime(new Date()),
         endTime: getTimePlusOne(new Date()),
-        availableMeetingList: []
+        availableMeetingList: [],
+        items: [
+            { name: '1', value: '蓝海职场', checked: 'true' },
+            { name: '2', value: '嘉华职场' },
+        ]
     },
 
     /**
@@ -71,6 +75,10 @@ Page({
     onReady: function () {
 
     },
+    radioChange: function (e) {
+        console.log('radio发生change事件，携带value值为：', e.detail.value)
+    },
+
 
     /**
      * 生命周期函数--监听页面显示
