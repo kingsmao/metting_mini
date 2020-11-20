@@ -11,6 +11,10 @@ Page({
         meetingTypeList: [
             "分享会", "技术评审", "需求评审", "周会", "项目沟通", "APP同步会", "项目培训", "新业务培训", "业务考核"
         ],
+        radioItems: [
+            {name: 'cell standard', value: '0'},
+            {name: 'cell standard', value: '1', checked: true}
+        ],
         /*预定会议室初始化数据*/
         meetingRoom: {
             roomId: '',
@@ -25,7 +29,8 @@ Page({
             departmentList: []    
         },
         departmentId:'',
-        meetingName:''
+        meetingName:'',
+        delaySwitch:false
     },
 
     select: function(e) {
@@ -39,7 +44,27 @@ Page({
             meetingName: e.detail
         })
     },
-      
+
+    radioChange: function (e) {
+        console.log('radio发生change事件，携带value值为：', e.detail.value);
+
+        var radioItems = this.data.radioItems;
+        for (var i = 0, len = radioItems.length; i < len; ++i) {
+            radioItems[i].checked = radioItems[i].value == e.detail.value;
+        }
+
+        this.setData({
+            radioItems: radioItems,
+            delaySwitch: e.detail.value
+        });
+    },
+
+    bindSwitch: function (e) {
+        this.setData({
+            date: e.detail.value
+        })
+    },
+    
     /**
      * 生命周期函数--监听页面加载
      */
@@ -73,9 +98,11 @@ Page({
         const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
         const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
         const userName =  e.detail.value.userName;
+        const delaySwitch =  this.data.delaySwitch;
         console.log("departmentId" , departmentId)
         console.log("meetingName" , meetingName)
         console.log("userName" , userName)
+        console.log("delaySwitch" , delaySwitch)
         if(departmentId === '') {
             await showToast({
               title: '请选择部门'
@@ -103,14 +130,18 @@ Page({
                 meetingName,
                 beginTime,
                 endTime,
-                userName
+                userName,
+                delaySwitch,
             }
         }).then(result => {
-            console.log(result);
+
             wx.navigateTo({
                 url: '../meeting_index/meeting_index'
               })
         })
+
+
+        
         
       },
 

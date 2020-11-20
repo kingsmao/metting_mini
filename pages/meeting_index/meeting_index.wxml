@@ -1,5 +1,6 @@
 <!--pages/meeting_index/meeting_index.wxml-->
-<view class="container_up">
+<view class="box">
+    <view class="container_up">
     <view class="box-upper " wx:for="{{availableMeetingList}}" wx:for-item="room" wx:for-index="index" wx:key="id">
         <view bindtap="goToReserve" data-item="{{room.roomId}}">
             <view class="button_order">
@@ -7,10 +8,7 @@
             </view>
             <view>
                 <view class="first">{{room.roomName}}</view>
-                <view class="secondOne">{{room.roomPersonCount}}人</view>
-                <view class="secondOne">沙发</view>
-                <view class="secondOne">投影仪</view>
-                <view class="secondOne">白板</view>
+                <view class="secondOne">{{room.roomPersonCount}}</view>
             </view>
             <view wx:for="{{room.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
                 <view class="third">
@@ -23,6 +21,16 @@
 </view>
 
 <view class="container_down">
+    <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <view class="weui-label">预留位置</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="time" value="{{endTime}}" start="00:00" end="24:00" bindchange="bindTimeEndChange">
+                <view class="weui-input">{{endTime}}</view>
+            </picker>
+        </view>
+    </view>
     <view class="weui-cell weui-cell_active">
         <view class="weui-cell__hd">
             <view class="weui-label">会议日期</view>
@@ -53,7 +61,12 @@
             </picker>
         </view>
     </view>
-<button  class="button_search" bindtap="availableRoomByTime">搜索</button>
-<button  class="button_my" bindtap="goToMyMeeting">我的</button>
+    <view class="weui-cell">
+        <button  class="button_search" bindtap="availableRoomByTime">搜索</button>
+        <button  class="button_my" bindtap="goToMyMeeting">我的</button>
+    </view>
+
 </view>
+</view>
+
 

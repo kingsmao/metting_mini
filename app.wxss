@@ -14,6 +14,10 @@ page,view,text,swiper,swiper-item,image,navigator{
  1 less 中 存在 变量这个知识
  2 原生的css和wxss也是支持 变量 
  */
+ .box{
+   /* position: fixed; */
+   width: 100%;
+ }
  page{
    /* 定义主题颜色 */
    --themeColor:#eb4450;
@@ -48,7 +52,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   align-items: center;  
   justify-content: space-between;
   box-sizing: border-box;
-  height: 70vh;
+  height: 68vh;
   overflow-y: scroll;
 } 
 
@@ -138,7 +142,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   line-height: 20px;
 }
 .secondOne {
-  width: 50px;
+  width: 200px;
   height: 25px;
   background-color:#5F9EA0;
   text-align: center;
@@ -176,6 +180,9 @@ page,view,text,swiper,swiper-item,image,navigator{
   line-height: 25px;
   border-radius: 5px;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -186,6 +193,20 @@ page,view,text,swiper,swiper-item,image,navigator{
 }
 .force_bottom{
   width:90%;
-  position: absolute;
-  bottom:10px;
+  /* top:21px; */
+  text-align: center;
+  display:inline-block;
+  background-color: #008B8B;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+.center_botton{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+}
+.weui-cell {
+  padding: 6px 16px !important;
 }

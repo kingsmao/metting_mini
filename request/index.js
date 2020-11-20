@@ -29,6 +29,7 @@ export const request = (params) => {
                 console.log(result)
                 //服务端数据结果 {"data":"","code":"",message:{}}
                 resolve(result.data.data);
+                console.log(result.data.message);
             },
             fail: (err) => {
                 reject(err);

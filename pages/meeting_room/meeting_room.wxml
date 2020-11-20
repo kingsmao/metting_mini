@@ -3,10 +3,7 @@
   <view class="box-upper">
     <view>
         <view class="first">{{meetingRoom.roomName}}</view>
-        <view class="secondOne">{{meetingRoom.roomPersonCount}}人</view>
-        <view class="secondOne">沙发</view>
-        <view class="secondOne">投影仪</view>
-        <view class="secondOne">白板</view>
+        <view class="secondOne">{{meetingRoom.roomPersonCount}}</view>
     </view>
     <view wx:for="{{meetingRoom.meetingList}}" wx:for-item="meeting" wx:for-index="index" wx:key="id">
         <view class="third">
@@ -44,25 +41,24 @@
             <view class="weui-cell__bd">会议主题:</view>
             <single-dropdown-select prop-array='{{meetingTypeList}}'  bind:select='selectMeetingType'/>
         </view>
+        <view class="weui-cell weui-cell_switch">
+                <view class="weui-cell__bd">顺延四周</view>
+                <view class="weui-cell__ft">
+                    <switch unchecked />
+                </view>
+        </view>
         <view class="weui-cell">
             <view class="weui-cell__bd">预定人:</view>
             <view class="weui-cell__ft">
               <input class="weui-input" name="userName" placeholder="{{meetingRoom.userName}}" />
             </view>
         </view>
-        <view class="weui-cell">
-           
-        </view>
-        <view class="weui-cell">
-           
-          </view>
-          <view class="weui-cell">
-           
-          </view>
-          
       </view>
-      <view class="force_bottom">
-        <button  type="primary" formType="submit">提交</button>
+      <view class="center_botton">
+        <button class="force_bottom" formType="submit">提交</button>
+      </view>
+      <view >
+        
       </view>
     </form>
   </view>
