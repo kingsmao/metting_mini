@@ -58,7 +58,7 @@
         <view class="weui-cell weui-cell_switch">
                 <view class="weui-cell__bd">顺延四周</view>
                 <view class="weui-cell__ft">
-                    <switch unchecked />
+                    <switch unchecked bindchange="radioChange" />
                 </view>
         </view>
         <view class="weui-cell">
