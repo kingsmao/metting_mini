@@ -75,3 +75,6 @@
     height: 48rpx;
     background-color: #fff;
 }
+.name-font {
+    font-size: 15px;
+}

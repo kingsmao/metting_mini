@@ -30,7 +30,11 @@ Page({
         },
         departmentId:'',
         meetingName:'',
-        delaySwitch:false
+        delaySwitch:false,
+        toast: false,
+        hideToast: false,
+        topTips: false,
+        hide: false,
     },
 
     select: function(e) {
@@ -91,59 +95,106 @@ Page({
     },
 
     async formSubmit(e) {
-        const roomId = this.data.meetingRoom.roomId;
-        const departmentId = this.data.departmentId;
-        const openId = wx.getStorageSync('openid');
-        const meetingName = this.data.meetingName;
-        const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
-        const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
-        const userName =  e.detail.value.userName;
-        const delaySwitch =  this.data.delaySwitch;
-        console.log("departmentId" , departmentId)
-        console.log("meetingName" , meetingName)
-        console.log("userName" , userName)
-        console.log("delaySwitch" , delaySwitch)
-        if(departmentId === '') {
-            await showToast({
-              title: '请选择部门'
-            })
-            return;
-        }
-        if(meetingName === '') {
-            await showToast({
-              title: '请选择会议主题'
-            })
-            return;
-        }
-        if(userName === '') {
-            console.log("userName is null")
-            await showToast({
-              title: '用户名不能为空'
-            })
-            return;
-        }
-        request({
-            url: "/reserveMeetingRoom", method: "POST", data: {
-                roomId,
-                departmentId,
-                openId,
-                meetingName,
-                beginTime,
-                endTime,
-                userName,
-                delaySwitch,
-            }
-        }).then(result => {
-            console.log(result)
-            wx.navigateTo({
-                url: '../meeting_index/meeting_index'
+              const roomId = this.data.meetingRoom.roomId;
+              const departmentId = this.data.departmentId;
+              const openId = wx.getStorageSync('openid');
+              const meetingName = this.data.meetingName;
+              const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
+              const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
+              const userName =  e.detail.value.userName;
+              const delaySwitch =  this.data.delaySwitch; 
+              console.log("departmentId" , departmentId)
+              console.log("meetingName" , meetingName)
+              console.log("userName" , userName)
+              console.log("delaySwitch" , delaySwitch)
+              if(departmentId === '') {
+                  showToast({
+                  title: '请选择部门'
+                  })
+                  return;
+              }
+              if(meetingName === '') {
+                  showToast({
+                  title: '请选择会议主题'
+                  })
+                  return;
+              }
+              if(userName === '') {
+                  console.log("userName is null")
+                  showToast({
+                  title: '用户名不能为空'
+                  })
+                  return;
+              }
+        wx.requestSubscribeMessage({
+            tmplIds: ["g4llUD-SEs_CT8VsiIjDnRJ4wj7pKbnSD6nxIoS2iyY"],
+            success: (res) => {
+              if (res['g4llUD-SEs_CT8VsiIjDnRJ4wj7pKbnSD6nxIoS2iyY'] === 'accept'){
+                console.log("接收了授权")
+              }else{
+                console.log("拒绝了授权")
+              }
+              
+              request({
+                  url: "/reserveMeetingRoom", method: "POST", data: {
+                      roomId,
+                      departmentId,
+                      openId,
+                      meetingName,
+                      beginTime,
+                      endTime,
+                      userName,
+                      delaySwitch,
+                  }
+              }).then(result => {
+                  console.log(result.data)
+                  if(result.data == "OK"){
+                    this.setData({
+                        toast: true
+                    });
+                    setTimeout(() => {
+                        this.setData({
+                            hideToast: true
+                        });
+                        setTimeout(() => {
+                            this.setData({
+                                toast: false,
+                                hideToast: false,
+                            });
+                            wx.reLaunch({
+                                url: '../meeting_index/meeting_index'
+                            })
+                        }, 300);
+                    }, 1800);
+                  }else{
+                      //弹起失败窗口
+                      this.open();
+                  }
               })
+            },
+            fail(res){
+                console.log(res)
+              }
         })
-
-
-        
-        
       },
+
+      open: function() {
+        this.setData({
+            topTips: true
+        });
+        this.setData({
+            hide: true
+        });
+        setTimeout(() => {
+            this.setData({
+                topTips: false,
+                hide: false,
+            });
+            wx.reLaunch({
+                url: '../meeting_index/meeting_index'
+            })
+        }, 3000);
+    },
 
     /**
      * 生命周期函数--监听页面初次渲染完成

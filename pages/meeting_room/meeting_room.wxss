@@ -25,3 +25,25 @@
 .box_with{
   justify-content: space-between;
 }
+
+.weui-toptipss{
+  position:fixed;
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0);
+  top:0;
+  left:0;
+  right:0;
+  padding:5px;
+  font-size:20px;
+  text-align:center;
+  color:#fff;z-index:5000;
+  word-wrap:break-word;
+  word-break:break-all;
+  background-color:#e64340;
+  height: 50px;
+  width: 96%;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 4px;
+  line-height: 37px;
+}

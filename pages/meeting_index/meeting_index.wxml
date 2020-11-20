@@ -26,7 +26,7 @@
             <radio-group class="radio-group" bindchange="radioChange">
                 <label class="weui-cell weui-cell_active weui-check__label" wx:for="{{items}}" wx:key="name">
                     <view class="weui-cell__bd">
-                            <view>{{item.value}}</view>
+                            <view class="name-font">{{item.value}}</view>
                             </view>
                             <view class="weui-cell__ft">
                                 <radio
@@ -43,7 +43,7 @@
 		
     <view class="weui-cell weui-cell_active">
         <view class="weui-cell__hd">
-            <view class="weui-label">会议日期</view>
+            <view class="weui-label name-font">会议日期</view>
         </view>
         <view class="weui-cell__bd">
             <picker mode="date" value="{{date}}" start="2020-01-01" end="2025-12-01" bindchange="bindDateChange">
@@ -53,7 +53,7 @@
     </view>
     <view class="weui-cell weui-cell_active">
         <view class="weui-cell__hd">
-            <view class="weui-label">开始时间</view>
+            <view class="weui-label" name-font>开始时间</view>
         </view>
         <view class="weui-cell__bd">
             <picker mode="time" value="{{beginTime}}" start="00:00" end="24:00" bindchange="bindTimeStartChange">
@@ -63,7 +63,7 @@
     </view>
     <view class="weui-cell weui-cell_active">
         <view class="weui-cell__hd">
-            <view class="weui-label">结束时间</view>
+            <view class="weui-label" name-font>结束时间</view>
         </view>
         <view class="weui-cell__bd">
             <picker mode="time" value="{{endTime}}" start="00:00" end="24:00" bindchange="bindTimeEndChange">

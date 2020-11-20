@@ -13,6 +13,16 @@
     </view>
   </view>
 
+	<view class="fadeIn {{hideToast ? 'fadeOut' : ''}}" wx:if="{{toast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+			<view class="weui-toast__content">预定成功！</view>
+		</view>
+  </view>
+  
+
+
   <view class="inner_box">
     <form catchsubmit="formSubmit" >
       <view hidden="true">{{meetingRoom.roomId}} </view>
@@ -62,8 +72,8 @@
         <button class="force_bottom" formType="submit">提交</button>
       </view>
       <view >
-        
       </view>
     </form>
   </view>
+  <view wx:if="{{topTips}}" class="weui-toptipss fadeIn {{hide ? 'fadeOut' : ''}}">会议时间冲突，请重新选择！</view>
 </view>
