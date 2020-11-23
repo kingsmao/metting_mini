@@ -58,10 +58,10 @@ Page({
         const meetingId = item;
 
         wx.showModal({
-          title: '后悔药',
+          title: '取消预定',
           cancelText: '取消',
           confirmText: '确认',
-          content: '怎么就后悔了呢？不是说好的一起拼秋裤吗？',
+          content: '怎么就割肉了呢？不是说好的一起套牢吗？',
           showCancel: true,
           success: (result) => {
               console.info(result)
@@ -72,7 +72,7 @@ Page({
                     console.log(result)
         
                     wx.navigateTo({
-                        url: '../my_meeting_list/my_meeting_list'
+                        url: '../meeting_index/meeting_index'
                       })
                 })
             } else {
