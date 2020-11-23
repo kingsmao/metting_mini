@@ -16,6 +16,7 @@ Page({
         beginTime: getTime(new Date()),
         endTime: getTimePlusOne(new Date()),
         availableMeetingList: [],
+        workplace: 1,
         items: [
             { name: '1', value: '蓝海职场', checked: 'true' },
             { name: '2', value: '嘉华职场' },
@@ -36,11 +37,14 @@ Page({
         const beginTime = this.data.beginTime;
         const endTime = this.data.endTime;
         const date = this.data.date;
+        const workplace = this.data.workplace;
+        console.log("workplace" + workplace);
         request({
             url: "/availableRoomByTime", method: "GET", data: {
                 date: date,
                 beginTime: beginTime,
-                endTime: endTime
+                endTime: endTime,
+                workplace: workplace,
             }
         }).then(result => {
             console.log(result);
@@ -77,6 +81,7 @@ Page({
     },
     radioChange: function (e) {
         console.log('radio发生change事件，携带value值为：', e.detail.value)
+        this.data.workplace = e.detail.value
     },
 
 

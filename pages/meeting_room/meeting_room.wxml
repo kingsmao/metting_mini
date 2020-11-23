@@ -28,10 +28,6 @@
       <view hidden="true">{{meetingRoom.roomId}} </view>
       <view class="weui-cells weui-cells_after-title">
         <view class="weui-cell">
-            <view class="weui-cell__bd">职场:</view>
-            <view class="weui-cell__ft">首农蓝海</view>
-        </view>
-        <view class="weui-cell">
             <view class="weui-cell__bd">会议室:</view>
             <view class="weui-cell__ft">{{meetingRoom.roomName}}</view>
         </view>
@@ -64,7 +60,7 @@
         <view class="weui-cell">
             <view class="weui-cell__bd">预定人:</view>
             <view class="weui-cell__ft">
-              <input class="weui-input" name="userName" placeholder="{{meetingRoom.userName}}" />
+              <input class="weui-input" name="userName" value="{{meetingRoom.userName}}" />
             </view>
         </view>
       </view>

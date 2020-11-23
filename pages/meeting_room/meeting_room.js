@@ -30,6 +30,7 @@ Page({
         },
         departmentId:'',
         meetingName:'',
+        userName: '',
         delaySwitch:false,
         toast: false,
         hideToast: false,
@@ -78,6 +79,7 @@ Page({
         const endTime = options.endTime;
         const date = options.date;
         const openId = wx.getStorageSync('openid');
+        const userName = options.userName;
         request({
             url: "/meetingRoomInfo", method: "GET", data: {
                 roomId,
@@ -101,7 +103,7 @@ Page({
               const meetingName = this.data.meetingName;
               const beginTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.beginTime + ":00";
               const endTime = this.data.meetingRoom.date + " " + this.data.meetingRoom.endTime + ":00";
-              const userName =  e.detail.value.userName;
+              const userName = e.detail.value.userName;
               const delaySwitch =  this.data.delaySwitch; 
               console.log("departmentId" , departmentId)
               console.log("meetingName" , meetingName)
@@ -147,7 +149,7 @@ Page({
                       delaySwitch,
                   }
               }).then(result => {
-                  console.log(result.data)
+                  console.log(result.code)
                   if(result.data == "OK"){
                     this.setData({
                         toast: true
