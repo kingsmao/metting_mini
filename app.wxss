@@ -167,18 +167,19 @@ page,view,text,swiper,swiper-item,image,navigator{
   float: left;
   margin-top: 6px;
   margin-left: 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   color: white;
 }
 .thirdTwo,.fifthTwo {
   width: 160px;
   height: 25px;
-  float: right;
+  float: left;
   margin-right: 10px;
   margin-top: 5px;
-  text-align: center;
+  margin-left: 10px;
+  text-align: left;
   line-height: 25px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   color: white;
   overflow: hidden;
   text-overflow: ellipsis;
