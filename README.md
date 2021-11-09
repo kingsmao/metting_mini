@@ -7,7 +7,7 @@
 [@kingmao666](https://github.com/kingmao666)
 ****
 ### meeting
-前端：https://github.com/kingmao666/meeting
+后端：https://github.com/kingmao666/meeting
 ****
 
 ![m1](https://user-images.githubusercontent.com/38786646/113962913-38f5a280-985b-11eb-8252-3c430488be16.jpg)
